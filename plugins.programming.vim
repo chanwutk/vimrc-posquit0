@@ -215,11 +215,20 @@
   " Run deoplete automatically
   let g:deoplete#enable_at_startup=1
   " When a capital letter is included in input, does not ignore
-  let g:deoplete#enable_smart_case=1
+  " --depricated--
+  " let g:deoplete#enable_smart_case=1
   " Set the number of the input completion at the time of key input
-  let g:deoplete#auto_complete_start_length=2
+  " --depricated--
+  " let g:deoplete#auto_complete_start_length=2
   " Set the limit of candidates
-  let g:deoplete#max_list=32
+  " --depricated--
+  " let g:deoplete#max_list=32
+  " Use deoplete#custom#option instead for depricated configs
+  autocmd VimEnter * call deoplete#custom#option({
+  \ 'smart_case': v:true,
+  \ 'auto_complete_start_length': 2,
+  \ 'max_list': 32,
+  \ })
   " Close the preview window after completion is done
   autocmd CompleteDone * pclose!
   " Disable the preview window
@@ -403,7 +412,7 @@
     set colorcolumn=80
     set showmode
     set showcmd
-    set scrolloff=3
+    set scrolloff=7
     Limelight!
     LocalIndentGuide +hl +cc
   endfunction

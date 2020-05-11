@@ -25,18 +25,4 @@
   " Inverts indent guides
   let g:gruvbox_invert_indent_guides=0
 "" }}}
-"" Theme: Zenburn {{{
-  Plug 'jnurmine/Zenburn'
-"" }}}
-"" Theme: Solarized {{{
-  Plug 'altercation/vim-colors-solarized'
-"" }}}
-"" Theme: Seoul256 {{{
-  Plug 'junegunn/seoul256.vim'
-"" }}}
-"" Theme: Base16 {{{
-  Plug 'chriskempson/base16-vim'
-"" }}}
-"" Theme: All-in-One {{{
-  Plug 'flazz/vim-colorschemes'
 "" }}}

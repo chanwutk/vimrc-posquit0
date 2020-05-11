@@ -98,5 +98,5 @@
   " NERDTree and tabs together in Vim
   Plug 'jistr/vim-nerdtree-tabs', { 'on': 'NERDTreeTabsToggle' }
   " Map NERDTreeToggle to <F11>
-  nnoremap <silent> <F11> :NERDTreeTabsToggle<CR>
+  nnoremap <silent> <leader>nn :NERDTreeTabsToggle<CR>
 "" }}}

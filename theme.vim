@@ -13,9 +13,8 @@ if &term =~ '256color'
 endif
 " Set to 'dark' to use colors that look good on dark background
 " Set to 'light' to use colors that look good on a light background
-" set background=dark
+set background=dark
 " Set colorscheme
-" colorscheme summerfruit256
-" colorscheme gruvbox
-" colorscheme seoul256-light
-colorscheme molokai
+colorscheme gruvbox
+" colorscheme molokai
+" colorscheme dracula

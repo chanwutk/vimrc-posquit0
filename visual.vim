@@ -44,7 +44,7 @@ set novisualbell
 " No noise
 set noerrorbells
 " Minimal number of screen lines to keep above and below the cursor
-set scrolloff=3
+set scrolloff=7
 " Native customized statusline, if airline is not available
 set statusline=%1*%{winnr()}\ %*%<\ %f\ %h%m%r%=%l,%c%V\ (%P)
 " Always show status line.
