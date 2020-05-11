@@ -21,7 +21,7 @@ set mouse=a
 set mousehide
 
 " <Esc> is too annoying to type
-inoremap jkj <Esc>
+" inoremap jkj <Esc>
 " Screen sucks, redraw everything
 nnoremap <Leader>r :redraw!<CR>
 " Make Q meaningless (Q: Entering to Ex mode)
@@ -29,31 +29,13 @@ nnoremap Q <nop>
 " Switching search-highlighting off until next search
 nnoremap <silent> <Leader>/ :nohlsearch<CR>
 
-" Quickly move current line above or below
-nnoremap <C-k><C-k> :<C-u>execute 'move -1-'. v:count1<CR>
-nnoremap <C-j><C-j> :<C-u>execute 'move +'. v:count1<CR>
+" move between wrapped lines
+nnoremap j gj
+nnoremap k gk
 
-""" Hex Editor {{{
-  " Map HexEditToggle to <F9>
-  nnoremap <silent> <F9> :call HexEditToggle()<CR>
-  let g:hexmode=0
-  function! HexEditToggle()
-    if g:hexmode
-      let g:hexmode=0
-      %!xxd -r
-    else
-      let g:hexmode=1
-      %!xxd
-    endif
-  endfunction
-" }}}
-
-""" Windows {{{
-  nnoremap <C-h> <C-w>h
-  nnoremap <C-j> <C-w>j
-  nnoremap <C-k> <C-w>k
-  nnoremap <C-l> <C-w>l
-" }}}
+" begin/end of the line
+nnoremap B ^
+nnoremap E $
 
 """ Tabs {{{
   nnoremap <silent> <Tab><Tab> :tabnew<CR>

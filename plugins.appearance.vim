@@ -35,19 +35,3 @@
   set noshowmode
 "" }}}
 
-"" Plugin: Vim Startify {{{
-  " A fancy start screen for Vim
-  Plug 'mhinz/vim-startify'
-  " A list of files to bookmark
-  let g:startify_bookmarks=[
-  \ '~/.vim/vimrc',
-  \ '~/.vim/plugins.vim',
-  \]
-  " A list of Vim regular expressions that filters recently used files
-  let g:startify_skiplist=[
-  \ 'COMMIT_EDITMSG',
-  \ $VIMRUNTIME .'/doc',
-  \ 'plugged/.*/doc',
-  \ 'bundle/.*/doc',
-  \]
-"" }}}

@@ -60,51 +60,32 @@
   Plug 'tpope/vim-surround'
 "" }}}
 
-"" Plugin: indentLine {{{
-  " Displaying thin vertical lines at each indentation level for code
-  " TODO: Very slow after Goyo mode and with long line files
-  Plug 'Yggdroot/indentLine'
-  " Specify a character to  be used as indent line
-  let g:indentLine_char='┆'
-  " let g:indentLine_char='|'
-  " Specify a character to  be used as indent line on the first level
-  let g:indentLine_first_char='¦'
-  " Whether the first indent level should be shown
-  let g:indentLine_showFirstIndentLevel=1
-  " Specify how much indent level do you want to use for indentLine
-  let g:indentLine_indentLevel=10
-  " Specify a list of file types to disable indent line
-  let g:indentLine_fileTypeExclude=['vim', 'json', 'markdown']
-  " Whether to show leading spaces
-  let g:indentLine_leadingSpaceEnabled=1
-  " Specify a character to show for leading spaces
-  let g:indentLine_leadingSpaceChar='·'
-  " Allow to see the concealed in the current cursor line
-  " when in normal & indent mode as intended
-  let g:indentLine_noConcealCursor=''
-"" }}}
-
-"" Plugin: Lengthmatters {{{
-  " Highlight the flooding part of an overly long line
-  " Plug 'whatyouhide/vim-lengthmatters'
-  " Highlight when opening a new window
-  let g:lengthmatters_on_by_default=1
-  " Whether to highlight based on the value of textwidth
-  let g:lengthmatters_use_textwidth=1
-  " Fallback if textwidth is not set
-  let g:lengthmatters_start_at_column=81
-  " No highlight when the file is read-only
-  let g:lengthmatters_exclude_readonly=1
-"" }}}
+" "" Plugin: indentLine {{{
+  " " Displaying thin vertical lines at each indentation level for code
+  " " TODO: Very slow after Goyo mode and with long line files
+  " Plug 'Yggdroot/indentLine'
+  " " Specify a character to  be used as indent line
+  " let g:indentLine_char='┆'
+  " " let g:indentLine_char='|'
+  " " Specify a character to  be used as indent line on the first level
+  " let g:indentLine_first_char='¦'
+  " " Whether the first indent level should be shown
+  " let g:indentLine_showFirstIndentLevel=1
+  " " Specify how much indent level do you want to use for indentLine
+  " let g:indentLine_indentLevel=10
+  " " Specify a list of file types to disable indent line
+  " let g:indentLine_fileTypeExclude=['vim', 'json', 'markdown']
+  " " Whether to show leading spaces
+  " let g:indentLine_leadingSpaceEnabled=1
+  " " Specify a character to show for leading spaces
+  " let g:indentLine_leadingSpaceChar='·'
+  " " Allow to see the concealed in the current cursor line
+  " " when in normal & indent mode as intended
+  " let g:indentLine_noConcealCursor=''
+" "" }}}
 
 "" Plugin: Number Toggle {{{
   " Toggles between hybrid and absolute line numbers automatically
   Plug 'jeffkreeftmeijer/vim-numbertoggle'
 "" }}}
 
-"" Plugin: Local Indent Guide {{{
-  " Display a guide for the current line's indent level
-  " Plug 'tweekmonster/local-indent.vim'
-  " Enable it with options(+hl, -hl, +cc, -cc)
-  " autocmd FileType * LocalIndentGuide +hl +cc
-"" }}}
