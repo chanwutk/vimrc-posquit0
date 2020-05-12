@@ -184,15 +184,8 @@
   " Run deoplete automatically
   let g:deoplete#enable_at_startup=1
   " When a capital letter is included in input, does not ignore
-  " --depricated--
-  " let g:deoplete#enable_smart_case=1
   " Set the number of the input completion at the time of key input
-  " --depricated--
-  " let g:deoplete#auto_complete_start_length=2
   " Set the limit of candidates
-  " --depricated--
-  " let g:deoplete#max_list=32
-  " Use deoplete#custom#option instead for depricated configs
   autocmd VimEnter * call deoplete#custom#option({
   \ 'smart_case': v:true,
   \ 'auto_complete_start_length': 2,
