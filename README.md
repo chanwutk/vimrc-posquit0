@@ -11,7 +11,7 @@
 ## Usage
 
 ```sh
-git clone git@github.com:chanwutk/vimrc.git ~/.vim
+git clone git@github.com:chanwutk/vimrc-posquit0.git ~/.vim
 ln -s .vim/vimrc .vimrc
 ln -s ~/.vim .config/nvim
 vim +PlugInstall +qall now
